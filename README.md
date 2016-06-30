@@ -43,8 +43,7 @@ $ gulp serve
 API RESTFul contruída com JAX-RS.
 
 Servidor de aplicação stand alone: Jetty.
-Persistência de dados: JPA2 - Hibernate 4.
-A fins de teste: Banco de dados: H2.
+Banco de dados: H2.
 
 Para executar:
 ```
