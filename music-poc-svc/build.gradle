@@ -10,6 +10,18 @@ repositories {
     jcenter();
 }
 
+task fatJar(type: Jar) {
+  manifest {
+        attributes 'Implementation-Title': 'Music POC Svc',  
+          'Implementation-Version': version,
+          'Main-Class': 'br.com.sinax.musicpoc.Bootstrap'
+    }
+    baseName = project.name + '-all'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    exclude 'META-INF/*.RSA', 'META-INF/*.SF','META-INF/*.DSA'
+    with jar
+}
+
 dependencies {
 
     compile 'org.glassfish.jersey.core:jersey-server:2.7'
