@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Music">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SINAX - Music POC</title>
+
+  <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- run `gulp inject` to automatically populate bower styles dependencies -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css({.tmp/serve,src}) styles/app.css -->
+  <!-- inject:css -->
+  <!-- css files will be automatically insert here -->
+  <!-- endinject -->
+  <!-- endbuild -->
+</head>
+<body>
+
+	<div id="wrapper"	>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">SINAX - Music POC</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="#/musics" ><i class="fa fa-music fa-fw"></i> Minhas Músicas</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <!-- Page Content -->
+        <div id="page-wrapper">
+        
+        	<div ng-view></div>
+        	
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+	<!-- build:js(src) scripts/vendor.js -->
+	<!-- bower:js -->
+	<!-- run `gulp inject` to automatically populate bower script dependencies -->
+	<!-- endbower -->
+	<!-- endbuild -->
+	
+	<!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
+	<!-- inject:js -->
+	<!-- js files will be automatically insert here -->
+	<!-- endinject -->
+	
+	<!-- inject:partials -->
+	<!-- angular templates will be automatically converted in js and inserted here -->
+	<!-- endinject -->
+	<!-- endbuild -->
+</body>
+</html>
